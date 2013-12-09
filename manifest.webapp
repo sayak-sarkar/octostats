@@ -1,0 +1,38 @@
+{
+  "version": "0.1",
+  "name": "GH Stats",
+  "launch_path": "/index.html",
+  "description": "Angular.js based web application to fetch an user's data from GitHub.",
+  "icons": {
+    "16": "",
+    "32": "",
+    "48": "",
+    "60": "",
+    "64": "",
+    "90": "",
+    "120": "",
+    "128": "",
+    "256": "",
+    "512": ""
+  },
+  "developer": {
+    "name": "Sayak Sarkar",
+    "url": "http://sayak.in"
+  },
+  "installs_allowed_from": [
+    "*"
+  ],
+  "default_locale": "en",
+  "permissions": {},
+  "locales": {
+    "en": {
+      "name": "GH Stats",
+      "description": "Angular.js based web application to fetch an user's data from GitHub."
+    },
+    "en-US": {
+      "name": "GH Stats",
+      "description": "Angular.js based web application to fetch an user's data from GitHub."
+    }
+  }
+}
+

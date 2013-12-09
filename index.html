@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html ng-app="app">
+  <head>
+      <!-- Bootstrap core CSS -->
+      <link rel="stylesheet" href="stylesheets/bootstrap.min.css"> 
+
+      <!-- App Specific CSS -->
+      <link rel="stylesheet" href="stylesheets/app.css"> 
+
+      <!-- Minified Angular Core JS-->
+      <script src="scripts/angular.min.js"></script>
+
+      <!-- Minified Underscore JS-->
+      <script src="scripts/underscore-min.js"></script>
+
+      <!-- App Specific JS-->
+      <script src="scripts/app.js"></script>
+
+  </head>
+
+  <body ng-controller="AppCtrl as app">
+
+    <div class="initial" id="header">
+      <h1>GitHub Stats</h1>
+      <p class="lead">Get your GitHub Profile Details!</p>
+    </div>
+
+    <!-- User Input Space -->
+      <div>
+        <form id="search">
+          <input type="text" placeholder="Enter GitHub Username" ng-model="formUsernameText" ng-model-instant>
+          <button class="btn" ng-click="fetchData()">Go</button>
+        </form>
+      </div>
+      
+    <!-- HTTP Request Space -->  
+      <div id="displayBlock" class="hidden">
+        <ul class="list-unstyled">
+          <li><a href="{{html_url}}"><img src="{{avatar_url}}" class="img-circle"></a></li>
+          <li><strong>{{name}}</strong></li>
+          <li>Company: {{company}}</li>
+          <li>Blog: <a href="{{blog}}">{{blog}}</a></li>
+          <li>Location: {{location}}</li>
+          <li>Email ID: <a href="mailto:{{email}}">{{email}}</a></li>
+          <li>Available for Hire: {{hireable}}</li>
+          <li>Number of Public Repositories: {{public_repos}}</li>
+          <li>Number of Public Gists: {{public_gists}} </li>
+          <li>Number of Followers: {{followers}}</li>
+          <li>Number of People being followed: {{following}}</li>
+          <li>Gitub User since: {{created_at}}</li>
+        </ul>
+      </div>
+  </body>
+</html>
