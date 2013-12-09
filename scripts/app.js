@@ -1,12 +1,12 @@
 var app = angular.module("app", []);
 
 app.controller("AppCtrl", function ($http, $scope) {
-
 	$scope.fetchData = function () {
 		var app = this;
 		$http.get("https://api.github.com/users/"+$scope.formUsernameText)
 			.success(function (data) {
 				app.user = data;
+
 				$scope.name=app.user.name;
 				$scope.avatar_url=app.user.avatar_url;
 				$scope.html_url=app.user.html_url;
@@ -22,6 +22,8 @@ app.controller("AppCtrl", function ($http, $scope) {
 				$scope.following=app.user.following;
 				var date = new Date(app.user.created_at);
 				$scope.created_at=date.getDate()+"/"+date.getMonth()+"/"+date.getFullYear();
+				
+				//Display Block Functions
 				document.getElementById("displayBlock").className='unhidden';
 				document.getElementById("header").className='';
 			})
@@ -29,5 +31,4 @@ app.controller("AppCtrl", function ($http, $scope) {
 				alert("Error fetching data from GitHub! :-/")
 			})
 	}
-
 })

@@ -1,8 +1,19 @@
+/*
+   Index
+------------
+1. Elements,
+2. Classes,
+3. IDs
+*/
+
+/*Elements*/
 body {
 	background-color: #ccc;
 	padding-top: 2px;
 	text-align: center;
 }
+
+/*Classes*/
 .initial {
 	padding-top: 140px;
 }
@@ -10,6 +21,8 @@ body {
 	padding: 40px 15px;
 	text-align: center;
 }
+
+/*IDs*/
 #displayBlock	{
 	padding-top: 25px;
 }
