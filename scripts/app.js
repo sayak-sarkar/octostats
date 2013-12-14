@@ -14,7 +14,7 @@ app.controller("AppCtrl", function ($http, $scope) {
 				$scope.name=app.user.name;
 				$scope.avatar_url=app.user.avatar_url;
 				if (app.user.html_url==null) {$scope.html_url="Not Shared";} else {$scope.html_url=app.user.html_url};
-				if (app.user.company==null) {$scope.company="Not Shared";} else {$scope.company=app.user.company};
+				if (app.user.company==null||app.user.company=="") {$scope.company="Not Shared";} else {$scope.company=app.user.company};
 				if (app.user.blog==null) {$scope.website="Not Shared";$scope.websiteLink="";} else {$scope.website=app.user.blog;$scope.websiteLink=$scope.website;};
 				if (app.user.location==null) {$scope.location="Not Shared";} else {$scope.location=app.user.location;};
 				if (app.user.email==null) {$scope.email="Not Shared";$scope.emailLink="";} else {$scope.email=app.user.email;$scope.emailLink="mailto:"+$scope.email;};
