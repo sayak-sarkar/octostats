@@ -3,9 +3,9 @@ OctoStats
 
 ![OctoNerd Image](images/logo.png)
 
-Angular.js based web application to fetch an user's data from GitHub.
+Angular.js + BootStrap based simple web application to fetch user statistics from GitHub.
 
-Logo / Image Policy
-===================
+Artwork / Image / Logo Policy
+=============================
 
 All Artwork(s) / Image(s) / Logo(s) used in this project are the creation of the developer, and as such are available under the GNU GPLv3 license.
