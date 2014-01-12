@@ -63,7 +63,7 @@ app.controller("AppCtrl", function ($http, $scope) {
 		                    } else {
 		                        count[index]++;
 		                    }
-		                    console.log(data[item].language);
+		                    //console.log(data[item].language);
 		                }
 		            }
 

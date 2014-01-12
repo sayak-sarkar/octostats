@@ -24,6 +24,7 @@ hr {
 	border-color:	#aaa transparent #fff;
 	clear:			both;
 	margin-bottom:  25px;
+	margin-top:     20px;
 }
 
 h1 {
@@ -82,13 +83,13 @@ h1 {
 }
 
 #numbers {
-	margin-bottom: 15px;
+	margin-bottom: 25px;
 }
 
 #pieChart {
 	margin-left: 2%;
 	margin-bottom: -80px;
-	margin-top: -20px;
+	margin-top: -30px;
 	text-align: center;
 }
 
@@ -114,34 +115,75 @@ h1 {
 	#personal-data	{
 		text-align: right;
 	}
+    #pieChart {
+        margin-left: 37%;
+    }
 }
 
 @media (max-width: 992px) {  
 	.throbber{
 		left: 45%;
 	}
+    #pieChart {
+        margin-left: 35%;
+    }
+}
+@media (max-width: 872px) {  
+	.throbber{
+		left: 45%;
+	}
+    #pieChart {
+        margin-left: 32%;
+    }
 }
 @media (max-width: 768px)	{
 	.throbber{
 		left: 42%;
 	}
+    #pieChart {
+        margin-left: 30%;
+    }
+}
+@media (max-width: 600px)	{
+    #pieChart {
+        margin-left: 25%;
+    }
 }
 @media (max-width: 520px)	{
 	.throbber{
 		left: 40%;
 	}
+    #pieChart {
+        margin-left: 22%;
+    }
 }
 @media (max-width: 460px)	{
 	.throbber{
 		left: 38%;
 	}
+    #pieChart {
+        margin-left: 18%;
+    }
+}
+@media (max-width: 425px)	{
+    #pieChart {
+        margin-left: 15%;
+    }
 }
 @media (max-width: 360px)	{
 	.throbber{
 		left: 36%;
 	}
     #languages {
-        margin-left: 35%;
+        margin-left: 30%;
         text-align: left;
+    }
+    #pieChart {
+        margin-left: 9%;
+    }
+}
+@media (max-width: 320px)	{
+    #pieChart {
+        margin-left: 5%;
     }
 }
