@@ -1,17 +1,20 @@
-/*
-   Index
-------------
-1. Elements,
-2. Classes,
-3. IDs,
-4. Media Queries.
-*/
+/**
+ * Stylesheet Index
+ * ================
+ *
+ * 1. Elements
+ * 2. Classes
+ * 3. IDs
+ * 4. Media Queries
+**/
 
-/*Elements*/
+/* 1. Elements*/
 body {
+	background-color: #ccc;
+    min-width: 320px;
+    overflow-x: hidden;
     padding-top: 25px;
     padding-bottom: 32px;
-	background-color: #ccc;
 	text-align: center;
 }
 
@@ -27,7 +30,7 @@ h1 {
 	font-size: 4rem;
 }
 
-/*Classes*/
+/* 2. Classes*/
 .img-circle	{
 	width: 80px;
 }
@@ -69,7 +72,24 @@ h1 {
 
 /*IDs*/
 #displayBlock	{
-	padding-top: 25px;
+	padding-top: 15px;
+}
+
+#languages {
+    margin-left: 34%;
+    text-align: left;
+    width: 33%;
+}
+
+#numbers {
+	margin-bottom: 15px;
+}
+
+#pieChart {
+	margin-left: 2%;
+	margin-bottom: -80px;
+	margin-top: -20px;
+	text-align: center;
 }
 
 #search {
@@ -120,4 +140,8 @@ h1 {
 	.throbber{
 		left: 36%;
 	}
+    #languages {
+        margin-left: 35%;
+        text-align: left;
+    }
 }
