@@ -1,6 +1,8 @@
 OctoStats
 ========
 
+[![Code Climate](https://codeclimate.com/github/sayak-sarkar/octostats.png)](https://codeclimate.com/github/sayak-sarkar/octostats)
+
 ![OctoNerd Image](images/logo.png)
 
 Angular.js + BootStrap based simple web application to fetch user statistics from GitHub.
