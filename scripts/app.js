@@ -8,7 +8,7 @@ app.controller("AppCtrl", function ($http, $scope) {
         document.getElementById("header").className = 'step';
         var app = this;
 
-        displayCharts = function () {
+        function displayCharts() {
             document.getElementById("pieChart").innerHTML = "";
             document.getElementById("count").innerHTML = "";
             document.getElementById("languages").innerHTML = "";
